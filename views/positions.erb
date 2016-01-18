@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic HTML Page</title>
+  </head>
+
+  <body>
+    <h1>
+      <%= @position_name %>
+    </h1>
+    <h4>
+      <%@positions.each do |position|%>
+        <a href="/positions/<%= position %>"><li><%= position%></li></a>
+      <%end%>
+    </h4>
+    <h3>
+    <a href="/teams">Back to all teams</a>
+    </h3>
+  </body>
+</html>

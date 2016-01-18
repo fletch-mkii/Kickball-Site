@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic HTML Page</title>
+    <!-- <link rel="stylesheet" href="/home.css"> -->
+  </head>
+
+  <body>
+    <h1>
+      <%= @team_name %>
+    </h1>
+    <h4>
+      <%@players.each do |player|%>
+        <li><%="#{player.position}: #{player.name}"%></li>
+      <%end%>
+    </h4>
+    <h3>
+    <a href="/teams">Back to all teams</a>
+    </h3>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic HTML Page</title>
+    <!-- <link rel="stylesheet" href="home.css"> -->
+  </head>
+
+  <body>
+    <h1>KICKBALL TEAMS</h1>
+
+    <% @teams.each do |team| %>
+      <li><a href="/teams/<%= team.name %>"><%= team.name %></a></li>
+    <% end %>
+
+    <h3>
+    <a href="/positions">To Positions</a>
+    <h3>
+
+  </body>
+</html>

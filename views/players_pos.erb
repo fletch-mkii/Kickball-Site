@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic HTML Page</title>
+    <!-- <link rel="stylesheet" href="/home.css"> -->
+  </head>
+
+  <body>
+    <h1>
+      <%= @position_name %>
+    </h1>
+    <h4>
+      <%players_out = []%>
+      <%@teams.each do |team, players|%>
+        <%players_out << players[@position_name]%>
+      <%end%>
+      <%players_out.each do |player|%>
+        <li><%= player%></li>
+      <%end%>
+    </h4>
+    <h3>
+    <a href="/teams">Back to all teams</a>
+    </h3>
+  </body>
+</html>
